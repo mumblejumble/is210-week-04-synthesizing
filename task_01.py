@@ -16,13 +16,13 @@ def celsius_to_kelvin(degrees):
 
 
 def fahrenheit_to_celsius(degrees):
-    """A function that converts fahrenheit to celsius."""
-    degrees = (degrees - decimal.Decimal('32')) * 5 / 9
+    """converting fahrenheit to celsius."""
+    degrees = (decimal.Decimal(degrees) - 32) * 5 / 9
     return degrees
 
 
 def fahrenheit_to_kelvin(degrees):
     """converting a Fahrenheit temperature to Kelvin"""
-    degrees = (degrees - decimal.Decimal('32')) * 5 / 9
+    degrees = (decimal.Decimal(degrees) - 32) * 5 / 9
     degrees = ABSOLUTE_DIFFERENCE + degrees
     return degrees
