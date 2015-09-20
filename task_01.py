@@ -3,10 +3,10 @@
 """Task 1"""
 
 
-from decimal import Decimal
+import decimal
 
 
-ABSOLUTE_DIFFERENCE = Decimal('273.15')
+ABSOLUTE_DIFFERENCE = decimal.Decimal('273.15')
 
 
 def celsius_to_kelvin(degrees):
@@ -17,12 +17,12 @@ def celsius_to_kelvin(degrees):
 
 def fahrenheit_to_celsius(degrees):
     """converting fahrenheit to celsius."""
-    degrees = (Decimal(degrees) - 32) * 5 / 9
+    degrees = (decimal.Decimal(degrees) - 32) * 5 / 9
     return degrees
 
 
 def fahrenheit_to_kelvin(degrees):
     """converting a Fahrenheit temperature to Kelvin"""
-    degrees = (Decimal(degrees) - 32) * 5 / 9
+    degrees = (decimal.Decimal(degrees) - 32) * 5 / 9
     degrees = ABSOLUTE_DIFFERENCE + degrees
     return degrees
